@@ -1,0 +1,9 @@
+../Drivers/CMSIS/Include/core_cm0plus.h:985:34:__NVIC_SystemReset	8	static,ignoring_inline_asm
+../Core/hardware/hardware.c:27:24:hardware_init	8	static,ignoring_inline_asm
+../Core/hardware/hardware.c:54:24:hardware_transmit_w_uart	24	static
+../Core/hardware/hardware.c:69:6:hardware_gpio_enable	16	static
+../Core/hardware/hardware.c:79:6:hardware_gpio_disable	16	static
+../Core/hardware/hardware.c:96:6:SystemClock_Config	96	static
+../Core/hardware/hardware.c:131:13:MX_GPIO_Init	48	static
+../Core/hardware/hardware.c:147:13:MX_USART2_UART_Init	8	static
+../Core/hardware/hardware.c:182:6:Error_Handler	8	static

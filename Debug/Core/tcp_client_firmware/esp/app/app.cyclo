@@ -1,0 +1,13 @@
+../Core/tcp_client_firmware/esp/app/app.c:51:6:esp_app_init	1
+../Core/tcp_client_firmware/esp/app/app.c:63:6:esp_app_1_ms_timer	1
+../Core/tcp_client_firmware/esp/app/app.c:73:6:esp_app_polling	3
+../Core/tcp_client_firmware/esp/app/app.c:95:6:write_into_api_rx_queue	1
+../Core/tcp_client_firmware/esp/app/app.c:102:13:esp_set_parameters	1
+../Core/tcp_client_firmware/esp/app/app.c:112:13:power_enable_fp	1
+../Core/tcp_client_firmware/esp/app/app.c:117:13:power_disable_fp	1
+../Core/tcp_client_firmware/esp/app/app.c:122:13:wifi_connection_success_fp	1
+../Core/tcp_client_firmware/esp/app/app.c:127:13:wifi_connection_fail_fp	1
+../Core/tcp_client_firmware/esp/app/app.c:132:13:tcp_connection_success_fp	1
+../Core/tcp_client_firmware/esp/app/app.c:137:13:tcp_connection_fail_fp	1
+../Core/tcp_client_firmware/esp/app/app.c:142:13:transmit_data_fp	1
+../Core/tcp_client_firmware/esp/app/app.c:147:13:received_data_fp	1

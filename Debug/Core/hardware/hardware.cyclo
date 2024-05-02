@@ -1,0 +1,9 @@
+../Drivers/CMSIS/Include/core_cm0plus.h:985:34:__NVIC_SystemReset	1
+../Core/hardware/hardware.c:27:24:hardware_init	2
+../Core/hardware/hardware.c:54:24:hardware_transmit_w_uart	2
+../Core/hardware/hardware.c:69:6:hardware_gpio_enable	1
+../Core/hardware/hardware.c:79:6:hardware_gpio_disable	1
+../Core/hardware/hardware.c:96:6:SystemClock_Config	3
+../Core/hardware/hardware.c:131:13:MX_GPIO_Init	1
+../Core/hardware/hardware.c:147:13:MX_USART2_UART_Init	5
+../Core/hardware/hardware.c:182:6:Error_Handler	0

@@ -1,0 +1,17 @@
+../Core/tcp_client_firmware/esp/api/api.c:47:19:esp_api_create	4
+../Core/tcp_client_firmware/esp/api/api.c:72:6:esp_api_1_ms_timer	4
+../Core/tcp_client_firmware/esp/api/api.c:93:6:esp_api_tcp_api_controller	40
+../Core/tcp_client_firmware/esp/api/api.c:311:19:esp_set_wifi_ssid	3
+../Core/tcp_client_firmware/esp/api/api.c:323:19:esp_set_wifi_password	3
+../Core/tcp_client_firmware/esp/api/api.c:335:19:esp_set_tcp_ip	3
+../Core/tcp_client_firmware/esp/api/api.c:347:19:esp_set_tcp_port	3
+../Core/tcp_client_firmware/esp/api/api.c:359:19:esp_set_static_ip	3
+../Core/tcp_client_firmware/esp/api/api.c:371:19:esp_set_gateway_ip	3
+../Core/tcp_client_firmware/esp/api/api.c:383:19:esp_set_mac_ip	3
+../Core/tcp_client_firmware/esp/api/api.c:406:26:esp_api_command_manager	16
+../Core/tcp_client_firmware/esp/api/api.c:473:13:esp_receive_handler	7
+../Core/tcp_client_firmware/esp/api/api.c:515:13:esp_transmit_handler	3
+../Core/tcp_client_firmware/esp/api/api.c:536:13:esp_state_delay	2
+../Core/tcp_client_firmware/esp/api/api.c:545:13:esp_hard_reset	3
+../Core/tcp_client_firmware/esp/api/api.c:565:21:length_calculator	2
+../Core/tcp_client_firmware/esp/api/api.c:581:12:string_to_int_converter	5
