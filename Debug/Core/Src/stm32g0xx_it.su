@@ -3,4 +3,4 @@
 ../Core/Src/stm32g0xx_it.c:40:6:SVC_Handler	8	static
 ../Core/Src/stm32g0xx_it.c:48:6:PendSV_Handler	8	static
 ../Core/Src/stm32g0xx_it.c:54:6:SysTick_Handler	8	static
-../Core/Src/stm32g0xx_it.c:62:6:USART2_LPUART2_IRQHandler	8	static
+../Core/Src/stm32g0xx_it.c:64:6:USART2_LPUART2_IRQHandler	8	static

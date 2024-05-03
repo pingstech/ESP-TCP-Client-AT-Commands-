@@ -1,8 +1,8 @@
 ../Core/tcp_client_firmware/esp/app/app.c:51:6:esp_app_init	8	static
 ../Core/tcp_client_firmware/esp/app/app.c:63:6:esp_app_1_ms_timer	8	static
 ../Core/tcp_client_firmware/esp/app/app.c:73:6:esp_app_polling	264	static
-../Core/tcp_client_firmware/esp/app/app.c:95:6:write_into_api_rx_queue	16	static
-../Core/tcp_client_firmware/esp/app/app.c:102:13:esp_set_parameters	8	static
+../Core/tcp_client_firmware/esp/app/app.c:96:6:write_into_api_rx_queue	16	static
+../Core/tcp_client_firmware/esp/app/app.c:104:13:esp_set_parameters	8	static
 ../Core/tcp_client_firmware/esp/app/app.c:112:13:power_enable_fp	16	static
 ../Core/tcp_client_firmware/esp/app/app.c:117:13:power_disable_fp	16	static
 ../Core/tcp_client_firmware/esp/app/app.c:122:13:wifi_connection_success_fp	16	static

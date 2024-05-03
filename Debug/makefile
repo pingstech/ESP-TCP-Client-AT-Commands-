@@ -64,8 +64,8 @@ all: main-build
 main-build: tcp_client_driver.elf secondary-outputs
 
 # Tool invocations
-tcp_client_driver.elf tcp_client_driver.map: $(OBJS) $(USER_OBJS) D:\main_desktop\project_files\st_files\tcp_client_driver\STM32G0B1KBUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "tcp_client_driver.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"D:\main_desktop\project_files\st_files\tcp_client_driver\STM32G0B1KBUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tcp_client_driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+tcp_client_driver.elf tcp_client_driver.map: $(OBJS) $(USER_OBJS) C:\Users\Yayla\Downloads\ESP-TCP-Client-AT-Commands--master\ESP-TCP-Client-AT-Commands--master\STM32G0B1KBUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "tcp_client_driver.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Yayla\Downloads\ESP-TCP-Client-AT-Commands--master\ESP-TCP-Client-AT-Commands--master\STM32G0B1KBUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tcp_client_driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

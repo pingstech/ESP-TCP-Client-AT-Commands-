@@ -2,5 +2,5 @@
 ../Core/tcp_client_firmware/queue/queue.c:32:21:queue_clean_up	24	static
 ../Core/tcp_client_firmware/queue/queue.c:52:26:queue_is_empty	16	static
 ../Core/tcp_client_firmware/queue/queue.c:62:14:queue_get_unreaden_size	24	static
-../Core/tcp_client_firmware/queue/queue.c:78:6:queue_write_data	24	static
-../Core/tcp_client_firmware/queue/queue.c:101:6:queue_read_data	24	static
+../Core/tcp_client_firmware/queue/queue.c:80:6:queue_write_data	24	static
+../Core/tcp_client_firmware/queue/queue.c:103:6:queue_read_data	24	static

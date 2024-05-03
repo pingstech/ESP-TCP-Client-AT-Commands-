@@ -56,6 +56,8 @@ void SysTick_Handler(void)
 
   HAL_IncTick();
 
+  main_systick_timer();
+
 }
 
 
@@ -66,6 +68,8 @@ void USART2_LPUART2_IRQHandler(void)
 
   HAL_UART_Receive_IT(&huart2, &rx_uart, 1);
 
-  main_uart_irq(&rx_uart, rx_uart);
+  //write_into_api_rx_queue(&rx_uart,1);
+
+  main_uart_irq(&rx_uart, 1);
 }
 

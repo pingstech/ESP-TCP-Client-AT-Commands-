@@ -20,9 +20,10 @@
 
 #define ESP_RESET_TIMEOUT		((int)2000) // in ms
 #define ESP_STATE_DELAY_TIMEOUT	((int)100)	// in ms
-#define ESP_UART_SYNC_TIMEOUT	((int)50)	// in ms
+#define ESP_UART_SYNC_TIMEOUT	((int)20)	// in ms
 
-#define ESP_L_BUFF_SIZE ((int)100)
+#define ESP_XL_BUFF_SIZE ((int)200)
+#define ESP_L_BUFF_SIZE ((int)150)
 #define ESP_S_BUFF_SIZE ((int)50)
 
 typedef enum

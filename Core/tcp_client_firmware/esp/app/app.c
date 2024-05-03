@@ -93,7 +93,7 @@ void esp_app_polling(void)
 /*
  * @Brief: ESP API queue filler
  * */
-void write_into_api_rx_queue(const unsigned char * rx_data, unsigned int rx_data_length)
+void write_into_api_rx_queue(unsigned char * rx_data, unsigned int rx_data_length)
 {
 	queue_write_data(&_app._api.rx_queue, (unsigned char *)rx_data, rx_data_length);
 	_app._api.rx_timer = 0;

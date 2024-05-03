@@ -75,6 +75,8 @@ void esp_api_1_ms_timer(esp_api_t * self)
 
 	self->command.timer++;
 
+	self->rx_timer++;
+
 	if(self->state == AT_DELAY_STATE)
 	{
 		self->delay_timer++;
@@ -99,7 +101,7 @@ void esp_api_tcp_api_controller(esp_api_t * self)
 		case AT_RESTORE:{
 			esp_return_type_e f_return = esp_api_command_manager(self,
 															     (char *)"AT+RESTORE\r\n",
-															     (char *)"OK",
+															     (char *)"ready",
 															     3, 3000);
 
 			if(f_return == ESP_SUCCESS)
@@ -152,7 +154,7 @@ void esp_api_tcp_api_controller(esp_api_t * self)
 			   self->parameter.static_ip[0]  == '\0' ||
 			   self->parameter.mac_ip[0]     == '\0') {self->state = AT_CWJAP;}
 
-			unsigned char cipsta_buffer[ESP_L_BUFF_SIZE] = {0};
+			unsigned char cipsta_buffer[ESP_XL_BUFF_SIZE] = {0};
 
 	        snprintf((char *)cipsta_buffer,
 	                 sizeof(cipsta_buffer),
@@ -251,7 +253,7 @@ void esp_api_tcp_api_controller(esp_api_t * self)
 
 			if(f_return == ESP_SUCCESS)
 			{
-				esp_state_delay(self, TRANSMIT_MESSAGE);
+				self->state = TRANSMIT_MESSAGE;
 			}
 
 			else if(f_return == ESP_HARD_FAIL)
@@ -261,14 +263,14 @@ void esp_api_tcp_api_controller(esp_api_t * self)
 		break;}
 
 		case TCP_COMMUNICATION:{
-			if(!queue_is_empty(&self->tx_queue) && self->rx_timer > ESP_UART_SYNC_TIMEOUT)
-			{
-				esp_receive_handler(self);
-			}
-
-			if(!queue_is_empty(&self->rx_queue))
+			if(!queue_is_empty(&self->tx_queue) )
 			{
 				esp_transmit_handler(self);
+			}
+
+			if(!queue_is_empty(&self->rx_queue) && self->rx_timer > ESP_UART_SYNC_TIMEOUT)
+			{
+				esp_receive_handler(self);
 			}
 
 		break;}
@@ -281,7 +283,7 @@ void esp_api_tcp_api_controller(esp_api_t * self)
 
 			if(f_return == ESP_SUCCESS)
 			{
-				esp_state_delay(self, TCP_COMMUNICATION);
+				self->state = TCP_COMMUNICATION;
 			}
 
 			else if(f_return == ESP_HARD_FAIL)
@@ -291,7 +293,7 @@ void esp_api_tcp_api_controller(esp_api_t * self)
 		break;}
 
 		case AT_DELAY_STATE:
-			if(self->state >= ESP_STATE_DELAY_TIMEOUT)
+			if(self->delay_timer >= ESP_STATE_DELAY_TIMEOUT)
 			{
 				self->state = self->next_state;
 			}
@@ -553,6 +555,7 @@ static void esp_hard_reset(esp_api_t * self)
 		self->reset_timer = 0;
 		self->callback->power_enable_cb(self);
 		self->state = AT_RESTORE;
+		self->next_state = AT_RESTORE;
 		self->command.state = COMMAND_TRANSMITTING;
 		queue_create(&self->rx_queue);
 		queue_create(&self->tx_queue);

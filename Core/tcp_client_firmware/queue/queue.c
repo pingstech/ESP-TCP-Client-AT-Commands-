@@ -68,6 +68,8 @@ unsigned int queue_get_unreaden_size(queue_t * self)
 		unreaden_size = self->head + (QUEUE_SIZE - self->tail);
 	}
 
+	if(self->head == self->tail) {return 0;}
+
 	return unreaden_size;
 }
 
