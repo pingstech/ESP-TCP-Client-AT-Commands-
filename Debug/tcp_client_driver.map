@@ -3601,9 +3601,8 @@ LOAD C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x0000000008005f84                . = ALIGN (0x4)
  *(.rodata)
  .rodata        0x0000000008005f84       0xcc ./Core/tcp_client_firmware/esp/api/api.o
- .rodata        0x0000000008006050       0xdd ./Core/tcp_client_firmware/esp/app/app.o
+ .rodata        0x0000000008006050       0xe0 ./Core/tcp_client_firmware/esp/app/app.o
  *(.rodata*)
- *fill*         0x000000000800612d        0x3 
  .rodata.AHBPrescTable
                 0x0000000008006130       0x40 ./Core/Src/system_stm32g0xx.o
                 0x0000000008006130                AHBPrescTable
@@ -4118,44 +4117,44 @@ LOAD C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_line    0x000000000000af2a     0x3692 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.o
  .debug_line    0x000000000000e5bc      0xe08 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.o
 
-.debug_str      0x0000000000000000    0xb1a63
- .debug_str     0x0000000000000000    0xad9d3 ./Core/Src/main.o
-                                      0xae0cf (size before relaxing)
- .debug_str     0x00000000000ad9d3      0xae0 ./Core/Src/stm32g0xx_hal_msp.o
-                                      0xaeac0 (size before relaxing)
- .debug_str     0x00000000000ae4b3       0xd3 ./Core/Src/stm32g0xx_it.o
-                                      0xae5da (size before relaxing)
- .debug_str     0x00000000000ae586      0x4dc ./Core/Src/sysmem.o
+.debug_str      0x0000000000000000    0xb1a6d
+ .debug_str     0x0000000000000000    0xad9dd ./Core/Src/main.o
+                                      0xae0d9 (size before relaxing)
+ .debug_str     0x00000000000ad9dd      0xae0 ./Core/Src/stm32g0xx_hal_msp.o
+                                      0xaeaca (size before relaxing)
+ .debug_str     0x00000000000ae4bd       0xd3 ./Core/Src/stm32g0xx_it.o
+                                      0xae5e4 (size before relaxing)
+ .debug_str     0x00000000000ae590      0x4dc ./Core/Src/sysmem.o
                                        0x5f83 (size before relaxing)
- .debug_str     0x00000000000aea62       0x8e ./Core/Src/system_stm32g0xx.o
+ .debug_str     0x00000000000aea6c       0x8e ./Core/Src/system_stm32g0xx.o
                                       0xaa62a (size before relaxing)
- .debug_str     0x00000000000aeaf0       0x34 ./Core/Startup/startup_stm32g0b1kbux.o
+ .debug_str     0x00000000000aeafa       0x34 ./Core/Startup/startup_stm32g0b1kbux.o
                                          0x99 (size before relaxing)
- .debug_str     0x00000000000aeb24      0x315 ./Core/hardware/hardware.o
+ .debug_str     0x00000000000aeb2e      0x315 ./Core/hardware/hardware.o
                                       0xab0cb (size before relaxing)
- .debug_str     0x00000000000aee39      0x574 ./Core/tcp_client_firmware/esp/api/api.o
+ .debug_str     0x00000000000aee43      0x574 ./Core/tcp_client_firmware/esp/api/api.o
                                        0x72a4 (size before relaxing)
- .debug_str     0x00000000000af3ad      0x1c6 ./Core/tcp_client_firmware/esp/app/app.o
-                                      0xae6b4 (size before relaxing)
- .debug_str     0x00000000000af573       0x69 ./Core/tcp_client_firmware/queue/queue.o
+ .debug_str     0x00000000000af3b7      0x1c6 ./Core/tcp_client_firmware/esp/app/app.o
+                                      0xae6be (size before relaxing)
+ .debug_str     0x00000000000af57d       0x69 ./Core/tcp_client_firmware/queue/queue.o
                                        0x6d2d (size before relaxing)
- .debug_str     0x00000000000af5dc      0x5ec ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
+ .debug_str     0x00000000000af5e6      0x5ec ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
                                       0xaaf03 (size before relaxing)
- .debug_str     0x00000000000afbc8      0x27e ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
+ .debug_str     0x00000000000afbd2      0x27e ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
                                       0xaab3b (size before relaxing)
- .debug_str     0x00000000000afe46      0x2ae ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.o
+ .debug_str     0x00000000000afe50      0x2ae ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.o
                                       0xaaada (size before relaxing)
- .debug_str     0x00000000000b00f4      0x155 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
+ .debug_str     0x00000000000b00fe      0x155 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
                                       0xaa78d (size before relaxing)
- .debug_str     0x00000000000b0249      0x3f0 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
+ .debug_str     0x00000000000b0253      0x3f0 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
                                       0xaabac (size before relaxing)
- .debug_str     0x00000000000b0639      0x4c1 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
+ .debug_str     0x00000000000b0643      0x4c1 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
                                       0xaadf6 (size before relaxing)
- .debug_str     0x00000000000b0afa      0x36f ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.o
+ .debug_str     0x00000000000b0b04      0x36f ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.o
                                       0xaac86 (size before relaxing)
- .debug_str     0x00000000000b0e69      0x98f ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.o
+ .debug_str     0x00000000000b0e73      0x98f ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.o
                                       0xab615 (size before relaxing)
- .debug_str     0x00000000000b17f8      0x26b ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.o
+ .debug_str     0x00000000000b1802      0x26b ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.o
                                       0xaaedb (size before relaxing)
 
 .debug_frame    0x0000000000000000     0x2b5c

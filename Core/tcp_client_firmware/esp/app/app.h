@@ -22,13 +22,13 @@
 #define SEND_MESSAGE_TIMEOUT ((int)1000) // in ms
 
 
-#define WIFI_SSID 		"SAYKAL2_2G"			// @Note: WiFi SSID info
-#define WIFI_PASSWORD	"SAYKAL2_5023058"		// @Note: WiFi Pasword info
-#define TCP_IP			"192.168.1.45"	// @Note: TCP IP info
+#define WIFI_SSID 		"WIFI_SSID"			// @Note: WiFi SSID info
+#define WIFI_PASSWORD	"WIFI_PASSWORD"		// @Note: WiFi Pasword info
+#define TCP_IP			"192.192.192.192"	// @Note: TCP IP info
 #define TCP_PORT		((int)28)			// @Note: TCP Port info
-#define STATIC_IP		"192.168.1.1"	// @Note: Static IP info
-#define GATEWAY_IP		"192.168.1.3"	// @Note: Gateway IP info
-#define MAC_IP			"255.255.255.0"	// @Note: Mac IP info
+#define STATIC_IP		"192.192.192.192"	// @Note: Static IP info
+#define GATEWAY_IP		"192.192.192.192"	// @Note: Gateway IP info
+#define MAC_IP			"255.255.255.255"	// @Note: Mac IP info
 
 typedef enum
 {
