@@ -20,14 +20,6 @@ Bu bağlantılar sağlandıktan sonra artık MCU’muzun gerekli olan ayarlamala
 
 ---
 
-### MCU’nun GPIO ve UART’ın Ayarlanması
-
-MCU ve ESP32’nin arasında bağlanmış olan bağlantının sağlanması için kullanılacak (bu proje için STM32G0B1KBU6 kullanılmıştır) MCU için gerekli ayaralanmalar yapılmalıdır. Aşağıda yapılması gereken örnek ayarlar verilmiştir.
-
-![stm32_pinout_for_esp.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/6621c450-8374-44e2-81d1-2b93d5ca6e82/88f2fcdd-6c2c-4a35-b76b-e4f0dabf7bab/stm32_pinout_for_esp.png)
-
----
-
 ### AT Komutları
 
 ESP32’nin WiFi ve Bluetooth işlevlerini kontrol etmek için kullanılan bir dizi komuttur. Bu komutlar, ESP32’nizin ayarlarını değiştirmek, bilgileri sorgulamak ve çeşitli işlemleri gerçekleştirmek için kullanılır.
