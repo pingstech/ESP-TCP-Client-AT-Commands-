@@ -503,11 +503,13 @@ static void esp_receive_handler(esp_api_t * self)
 	else if(strstr((char *)buffer, "CLOSED"))
 	{
 		self->callback->tcp_connection_fail_cb(self->called_by_object, self);
+		self->state = AT_CIPSTART;
 	}
 
 	else if(strstr((char *)buffer, "WIFI DISCONNECT"))
 	{
 		self->callback->wifi_connection_fail_cb(self->called_by_object, self);
+		self->state = AT_CWJAP;
 	}
 }
 
